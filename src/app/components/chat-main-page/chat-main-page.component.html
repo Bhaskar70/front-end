@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <app-chat-profile-nav></app-chat-profile-nav>
+</div>
+<div class="chat-container" *ngIf="userData">
+    <app-chat-sidenav [userData]="userData" (selected)="selected($event)"></app-chat-sidenav>
+    <app-chat-room [selectUser]="selectedUser"></app-chat-room>
+</div>

@@ -1,0 +1,43 @@
+<div class="sidnav-container">
+    <div class="header">
+        <h5 class="m-3">Chats</h5>
+        <div class="d-flex justify-content-around">
+            <p class="m-1" role="button" (click)="redirect()">+ New </p>
+            <p class="m-1"><i class="bi bi-filter"></i> Filter</p>
+        </div>
+    </div>
+    <div>
+        <input type="text" class="chat-search form-control form-control-solid" placeholder="Search contact / chat">
+    </div>
+    <div class="contacts">
+        <ul class="p-0">
+            @for(contact of contactList ; track contact){
+            <li class="ms-1 mb-3 contact" (click)="selectUser(contact)">
+                <img src="https://connectme-html.themeyn.com/images/avatar/1.jpg">
+                <div class="contact-details ms-3">
+                    <h6>{{contact.name}}</h6>
+                    <p class="last-msg">Had they visited Rome before</p>
+                    <span class="contact-menu" (click)="openUserModel(contact.name)"><i
+                            class="bi bi-three-dots"></i></span>
+                </div>
+                @if(contact?.showModel){
+                <div class="model-popup">
+                    <ul>
+                        <li><i class="bi bi-check2"></i>Mark as Read</li>
+                        <li class="line"><i class="bi bi-bell-slash-fill"></i>Mute Notifications</li>
+                        <li><i class="bi bi-person"></i> View Profile</li>
+                        <li><i class="bi bi-telephone"></i>Audio Call</li>
+                        <li class="line"><i class="bi bi-camera-video"></i>Video Call</li>
+                        <li><i class="bi bi-file-earmark-arrow-down-fill"></i>Archieve</li>
+                        <li><i class="bi bi-trash"></i>Delete</li>
+                        <li><i class="bi bi-exclamation-triangle"></i>Report</li>
+                    </ul>
+                </div>
+                }
+            </li>
+            } @empty {
+            No Friends Availble
+            }
+        </ul>
+    </div>
+</div>

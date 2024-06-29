@@ -1,0 +1,32 @@
+.line{
+    border-right: 1px solid gray;
+}
+.icon {
+    display: flex;
+    color: #334155;
+    background: #e2e8f0;
+    font-size: 25px;
+    border-radius: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+ padding: 6px 10px;
+.navbar-brand{
+    padding-right: 10px;
+}
+.collapse.navbar-collapse{
+    .nav-item{
+        padding-left: 20px;
+    }
+}
+}
+nav{
+    border-bottom: 1px solid gray;
+}
+.navbar-right{
+    .nav-item{
+       margin-left: 20px;  
+    }
+}

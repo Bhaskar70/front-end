@@ -1,0 +1,28 @@
+<div class="content" mat-dialog-content>
+  <div class="text-end">
+    <button mat-icon-button class="close-button" [mat-dialog-close]="true">
+      <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </button>
+    <input type="text" (input)="Search()" [(ngModel)]="searchText" class="chat-search form-control form-control-solid"
+      placeholder="Search contact / chat">
+  </div>
+  <div class="contacts">
+    <ul class="p-0">
+      @for(user of friendsData ; track user._id){
+      <li class="ms-1 mb-3 contact">
+        <div>
+          <img src="https://connectme-html.themeyn.com/images/avatar/1.jpg">
+        </div>
+        <div class="contact-details ms-3">
+          <h6>{{user.name}}</h6>
+          <p>{{user.email}}</p>
+        </div>
+        <div *ngIf="!user?.isFriend" class="d-flex fs-3" (click)="addFriend(user)"><i class="bi bi-person-fill-add"></i>
+        </div>
+      </li>
+      } @empty {
+      No Friends Availble
+      }
+    </ul>
+  </div>
+</div>

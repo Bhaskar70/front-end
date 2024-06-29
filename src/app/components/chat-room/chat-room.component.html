@@ -1,0 +1,22 @@
+@if(selectUser){
+    <div class="chat-container">
+        <div class="chat-header">
+            <img class="profile-pic" src="https://connectme-html.themeyn.com/images/avatar/1.jpg" >
+            <div class="ms-3">
+                <h6>{{selectUser.name}}</h6>
+                <p>Active</p>
+            </div>
+        </div>
+        <div class="chat-body">
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptate, corrupti esse incidunt provident excepturi reprehenderit laborum dignissimos? Asperiores, in. Neque, cupiditate magnam corporis ad impedit obcaecati fuga quisquam dolore!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique velit reiciendis, delectus suscipit aperiam minus eos illum voluptate, totam aut quasi officia, non facilis magni neque commodi! Qui, doloremque omnis.</p>
+        </div>
+        <div class="chat-footer">
+                <input type="text" class="form-control form-control-solid">
+        </div>
+    </div>
+} @else{
+  <div>
+     <img src="../../../../assets/icon7.png"> 
+  </div>
+}

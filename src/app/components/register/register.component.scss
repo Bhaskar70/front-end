@@ -1,0 +1,32 @@
+
+.btn-icon{
+    background-color: #e2e8f0;
+    color:  #475569;
+    border-color: #e2e8f0;
+    &:hover {
+       color : #2563eb;
+       background-color: #bfdbfe;
+       border-color: #bfdbfe;
+    }
+}
+
+.main {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+input {
+    &:focus
+    {
+        box-shadow: none;
+        border-color: #dee2e6 ;
+    }
+}
+.logo{
+    width: 35px;
+    margin-right: 5px;
+}

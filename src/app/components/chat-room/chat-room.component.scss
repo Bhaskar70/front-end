@@ -1,0 +1,26 @@
+.chat-header {
+    display: flex;
+    padding: 20px;
+    .profile-pic {
+        width: 70px;
+    }
+}
+.chat-body{
+  background-color: #dbeafe;
+  height: 60vh;
+}
+.chat-footer{
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border:  none;
+    input{
+         box-shadow: none;
+         width: 60%;
+         border-radius: 5px;
+         background-color: #e2e8f0;
+         border: none;
+    }
+}

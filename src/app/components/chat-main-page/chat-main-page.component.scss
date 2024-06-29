@@ -1,0 +1,12 @@
+.chat-container{
+    display: flex;
+    justify-content: space-between;
+    app-chat-sidenav{
+        width: 25%;
+        padding: 10px;
+        border-right:1px solid grey;
+    }
+    app-chat-room{
+        width: 75%;
+    }
+}

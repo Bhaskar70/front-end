@@ -1,0 +1,31 @@
+.contacts {
+    ul {
+        list-style: none;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 50px;
+                height: 49px;
+            }
+
+            div {
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.chat-search {
+    margin-left: 5px;
+    border-radius: 30px;
+    background-color: #e2e8f0;
+}
+.close-button{
+    position: fixed;
+    top: 32%;
+    right: 37%;
+    
+}
